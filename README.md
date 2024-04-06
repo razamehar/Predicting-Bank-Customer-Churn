@@ -3,14 +3,14 @@ This project aims to predict bank customer churn using a dataset derived from th
 
 # Analysis Steps:
 ## Univariate Analysis:
-1. Visualizing Categorical Features such as geography and gender
-2. Visualizing Numerical Features such as Credit Score, Age, Tenure, Balance, Number of Products, Estimated Salary
+- Visualizing Categorical Features such as geography and gender
+- Visualizing Numerical Features such as Credit Score, Age, Tenure, Balance, Number of Products, Estimated Salary
 
 ## Bivariate Analysis:
-1. Exploring Relationships Between Numerical Predictors and Target Variable:
-2. Churn and Credit Score, Age, Tenure, Balance, Number of Products, Estimated Salary, Has Credit Card, Is Active member
-3. Exploring Relationships Between Categorical Predictors and Target Variable:
-4. Churn count with Gender and Geography
+- Exploring Relationships Between Numerical Predictors and Target Variable:
+- Churn and Credit Score, Age, Tenure, Balance, Number of Products, Estimated Salary, Has Credit Card, Is Active member
+- Exploring Relationships Between Categorical Predictors and Target Variable:
+- Churn count with Gender and Geography
 
 ## Correlation Analysis:
 Examining Relationships Between Numerical Predictors and Target Variable using Point-Biserial Correlation as the target variable is binary.
@@ -20,16 +20,16 @@ To enhance the model's performance, a new feature was introduced that calculates
 
 # Predictive Modeling:
 ## Model Selection and Hyperparameter Tuning with Cross Validation:
-1. Explored various configurations for the K-Neighbors, Decision Tree, Random Forest, AdaBoost models, and XGBoost classifiers using 80% of the data for training while reserving 20% as a hold-out set.
-2. Subjected model parameters to k-fold cross-validation (k = 10) to identify the best-performing configurations.
-3. Selected Random Forest, Extra Tree, and XGBoosting classifiers for hyperparameter tuning based on their higher ROC AUC scores (more than 95%).
-4. fter exhaustive grid search, identified the best hyperparameters for each model.
-5. Evaluated models using a 10-fold cross-validation approach, employing ROC AUC score as a key metric.
+- Explored various configurations for the K-Neighbors, Decision Tree, Random Forest, AdaBoost models, and XGBoost classifiers using 80% of the data for training while reserving 20% as a hold-out set.
+- Subjected model parameters to k-fold cross-validation (k = 10) to identify the best-performing configurations.
+- Selected Random Forest, Extra Tree, and XGBoosting classifiers for hyperparameter tuning based on their higher ROC AUC scores (more than 95%).
+- After exhaustive grid search, identified the best hyperparameters for each model.
+- Evaluated models using a 10-fold cross-validation approach, employing ROC AUC score as a key metric.
 
 ## Model Evaluation:
-1. The optimal model (XGB Classifier) was trained on 100% of the training data and evaluated on the reserved holdout set.
-2. Model stacking and blending were employed but reduced the performance significantly, hence were not utilized.
-3. The optimal model performs well on both the training and the hold-out datasets.
+- The optimal model (XGB Classifier) was trained on 100% of the training data and evaluated on the reserved holdout set.
+- Model stacking and blending were employed but reduced the performance significantly, hence were not utilized.
+- The optimal model performs well on both the training and the hold-out datasets.
 
 ## Feature Importance: Model interpretability using SHAP (Shapley Additive Explanations) Summary Plot.
 Achieved model interpretability through visualization of SHAP (Shapley Additive Explanations) summary plot.
@@ -43,6 +43,12 @@ The strategies will contribute not only to the retention of existing customers b
 ## Usage
 ### Prerequisites
 - Python 3.10.12
+- pandas==1.5.3
+- numpy==1.26.2
+- seaborn==0.12.2
+- matplotlib==3.7.1
+- scipy==1.12.0
+- scikit-learn==1.3.0
 
 # License
 This project is licensed under the Raza Mehar License. See the [LICENSE.md](LICENSE.md) file for details.
