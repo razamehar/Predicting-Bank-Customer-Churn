@@ -32,7 +32,7 @@ To enhance the model's performance, a new feature was introduced that calculates
 - The optimal model performs well on both the training and the hold-out datasets.
 
 ## Feature Importance: Model interpretability using SHAP (Shapley Additive Explanations) Summary Plot.
-Achieved model interpretability through visualization of SHAP (Shapley Additive Explanations) summary plot.
+Achieved model interpretability through features importance, visualization of Partial Dependence Plot and SHAP (Shapley Additive Explanations) summary plot.
 
 # Findings & Observations:
 Findings and observations are based on univariate, multivariate analysis, and correlation analysis.
