@@ -1,4 +1,4 @@
-# Predicting-Bank-Customer-Churn
+# Predicting Bank Customer Churn
 This project aims to predict bank customer churn using a dataset derived from the Bank Customer Churn Prediction dataset available on Kaggle. The dataset used in this project has been generated from a deep learning model trained on the original dataset, resulting in feature distributions that are similar but not identical to the original data. Additionally, synthetic data has been generated separately from the Kaggle data to address class imbalance using an oversampling technique called SMOTE.
 
 # Analysis Steps:
